@@ -1,0 +1,148 @@
+﻿@model MVCNewsSite.Models.NewsArticle
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>NewsArticle</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Headline" class="control-label"></label>
+                <input asp-for="Headline" class="form-control" />
+                <span asp-validation-for="Headline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extract" class="control-label"></label>
+                <input asp-for="Extract" class="form-control" />
+                <span asp-validation-for="Extract" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Encoding" class="control-label"></label>
+                <input asp-for="Encoding" class="form-control" />
+                <span asp-validation-for="Encoding" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Text" class="control-label"></label>
+                <input asp-for="Text" class="form-control" />
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublishDate" class="control-label"></label>
+                <input asp-for="PublishDate" class="form-control" />
+                <span asp-validation-for="PublishDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ByLine" class="control-label"></label>
+                <input asp-for="ByLine" class="form-control" />
+                <span asp-validation-for="ByLine" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TweetText" class="control-label"></label>
+                <input asp-for="TweetText" class="form-control" />
+                <span asp-validation-for="TweetText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Source" class="control-label"></label>
+                <input asp-for="Source" class="form-control" />
+                <span asp-validation-for="Source" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="State" class="control-label"></label>
+                <input asp-for="State" class="form-control" />
+                <span asp-validation-for="State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClientQuote" class="control-label"></label>
+                <input asp-for="ClientQuote" class="form-control" />
+                <span asp-validation-for="ClientQuote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" class="form-control" />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastModifiedDate" class="control-label"></label>
+                <input asp-for="LastModifiedDate" class="form-control" />
+                <span asp-validation-for="LastModifiedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HtmlTitle" class="control-label"></label>
+                <input asp-for="HtmlTitle" class="form-control" />
+                <span asp-validation-for="HtmlTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HtmlMetaDescription" class="control-label"></label>
+                <input asp-for="HtmlMetaDescription" class="form-control" />
+                <span asp-validation-for="HtmlMetaDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HtmlMetaKeywords" class="control-label"></label>
+                <input asp-for="HtmlMetaKeywords" class="form-control" />
+                <span asp-validation-for="HtmlMetaKeywords" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HtmlMetaLangauge" class="control-label"></label>
+                <input asp-for="HtmlMetaLangauge" class="form-control" />
+                <span asp-validation-for="HtmlMetaLangauge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tags" class="control-label"></label>
+                <input asp-for="Tags" class="form-control" />
+                <span asp-validation-for="Tags" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Priority" class="control-label"></label>
+                <input asp-for="Priority" class="form-control" />
+                <span asp-validation-for="Priority" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Format" class="control-label"></label>
+                <input asp-for="Format" class="form-control" />
+                <span asp-validation-for="Format" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoHtmlAlt" class="control-label"></label>
+                <input asp-for="PhotoHtmlAlt" class="form-control" />
+                <span asp-validation-for="PhotoHtmlAlt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoOrientation" class="control-label"></label>
+                <input asp-for="PhotoOrientation" class="form-control" />
+                <span asp-validation-for="PhotoOrientation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoWidth" class="control-label"></label>
+                <input asp-for="PhotoWidth" class="form-control" />
+                <span asp-validation-for="PhotoWidth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoHeight" class="control-label"></label>
+                <input asp-for="PhotoHeight" class="form-control" />
+                <span asp-validation-for="PhotoHeight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoUrl" class="control-label"></label>
+                <input asp-for="PhotoUrl" class="form-control" />
+                <span asp-validation-for="PhotoUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

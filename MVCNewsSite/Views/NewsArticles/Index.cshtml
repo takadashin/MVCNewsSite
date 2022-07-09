@@ -1,0 +1,173 @@
+﻿@model IEnumerable<MVCNewsSite.Models.NewsArticle>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Headline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extract)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Encoding)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ByLine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TweetText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientQuote)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastModifiedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HtmlTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HtmlMetaDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HtmlMetaKeywords)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HtmlMetaLangauge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Priority)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Format)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoHtmlAlt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoOrientation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoWidth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoHeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Headline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extract)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Encoding)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ByLine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TweetText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientQuote)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastModifiedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HtmlTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HtmlMetaDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HtmlMetaKeywords)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HtmlMetaLangauge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tags)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Priority)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Format)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhotoHtmlAlt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhotoOrientation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhotoWidth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhotoHeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhotoUrl)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
